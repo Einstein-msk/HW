@@ -9,7 +9,7 @@
 .imageAndText {
    display: flex;
    gap: 27px;
-   
+
 }
 
 .imageAndText img {
@@ -38,4 +38,3 @@
 .time {
     
 }
-export: default
