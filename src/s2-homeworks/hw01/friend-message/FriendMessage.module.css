@@ -1,5 +1,5 @@
 .friendMessage {
-
+background-color: red;
 }
 
 .friendImageAndText {
@@ -7,6 +7,8 @@
 }
 
 .friendImageAndText img {
+ width:48px;
+    height:48px;
 
 }
 
@@ -27,5 +29,5 @@
 }
 
 .friendTime {
-
+background-color: yellow;
 }
