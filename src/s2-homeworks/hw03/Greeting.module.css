@@ -2,30 +2,57 @@
 }
 
 .inputAndButtonContainer {
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+    background-color: #00cc22;
+
 }
 
 .error {
 }
 
 .input {
+    align-self: flex-start;
+    height: 20px;
+    width: 372px;
 }
 
 .input:focus {
+    height: 20px;
+    width: 372px;
 }
 
 .errorInput {
+    height: 20px;
+    width: 372px;
 }
 
 .button {
+    width: 30px;
+    height: 20px;
+    align-self: flex-start;
+    background-color:
+            #0066CC;
+    color: white;
+
+
 }
 
 .button:focus {
+    background-color:
+            #0066CC;
+    color: white;
 }
 
 .button:active {
 }
 
 .button:disabled {
+    background-color:
+            #0066CC;
+    color: white;
+    opacity: 0.5;
 }
 
 .text {

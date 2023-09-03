@@ -3,9 +3,11 @@
 }
 
 .hw {
-
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .hwTitle {
-
+font-size: 22px;
 }

@@ -1,24 +1,34 @@
 .sidebar {
+   background-color: yellow;
 }
 
 .sidebar.open {
+background-color: #00cc22;
 }
 
 .background {
+    background-color: #0059b3;
 }
 
 .nav {
+
 }
 
 .nav a {
+    text-decoration: none;
 }
 
 .nav a:hover {
+
+
 }
 
 .nav a.active {
+    color:yellowgreen;
+    text-decoration: none;
 }
 .close {
+
 }
 
 .close img {
