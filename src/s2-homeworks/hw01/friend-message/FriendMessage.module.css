@@ -1,5 +1,5 @@
 .friendMessage {
-    background-color: red;
+
     display: flex;
     flex-direction: column;
     margin-top: 2%;
@@ -8,7 +8,9 @@
 
 .friendImageAndText {
     display: flex;
-    gap: 15px;
+    gap: 12px;
+    position: relative;
+    padding: 5px;
 }
 
 .friendImageAndText img {
@@ -18,24 +20,32 @@
 }
 
 .friendText {
+    position: relative;
     display: flex;
     gap: 5px;
     padding: 3px;
-    background-color: #F5F7FB;
+    background-color: #cbcbd9;
     border-radius: 10px 10px 10px 0px;
-    margin-bottom: 2%;
-    max-width: 40%;
+
     flex-flow: column wrap;
     word-wrap: break-word;
     height: auto;
     justify-content: space-evenly;
-    /*overflow: hidden;*/
+
 
 
 }
 
-.friendText:after {
-
+.friendText::after {
+    position: absolute;
+    content: "";
+    display: block;
+    clip-path: polygon(100% 21%, 0% 100%, 100% 100%);
+    background-color: #cbcbd9;
+    width: 13px;
+    height: 13px;
+    right: 100%;
+    bottom: 0%;
 }
 
 .friendName {
@@ -46,13 +56,27 @@
 }
 
 .friendMessageText {
-    word-break: break-all;
+    word-break: break-word;
+
 }
 
 .friendTime {
-    background-color: yellow;
+
     margin-left: 1.5%;
     width: 29px;
     height: 12px;
     font-size: 10px;
+    position: absolute;
+    top: 97%;
+    left: 5px;
+}
+
+.friendImageAndTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+
+
 }

@@ -3,11 +3,24 @@
 }
 
 .hw {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+
 }
 
 .hwTitle {
-font-size: 22px;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: 1/3;
 }

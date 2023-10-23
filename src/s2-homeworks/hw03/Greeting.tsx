@@ -3,11 +3,11 @@ import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string // need to fix any
-    setNameCallback: (e:ChangeEvent<HTMLInputElement>)=>void // need to fix any
-    addUser: ()=>void // need to fix any
-    onBlur: ()=>void // need to fix any
-    onEnter: (e: KeyboardEvent<HTMLInputElement>)=>void // need to fix any
-    error: string|null // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
+    onBlur: () => void // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    error: string | null // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
 }
@@ -42,23 +42,25 @@ const Greeting: React.FC<GreetingPropsType> = (
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
-                        className={error ? inputClass: ""}
+                        className={error ? inputClass : ""}
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
-                    <div id={'hw3-error'} className={error ? s.error: ""}>
+                    <div id={'hw3-error'} className={error ? s.error : ""}>
                         {error}
                     </div>
                 </div>
+                <div>
+                    <button
+                        id={'hw3-button'}
+                        onClick={addUser}
+                        className={s.button}
+                        disabled={!name.trim()}
+                    >
+                        add
+                    </button>
+                </div>
 
-                <button
-                    id={'hw3-button'}
-                    onClick={addUser}
-                    className={s.button}
-                    disabled={!name.trim()}
-                >
-                    add
-                </button>
             </div>
 
             {lastUserName && (
